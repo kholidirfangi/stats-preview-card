@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(233, 47%, 7%);
+  font-family: 'Inter', sans-serif;
+  weight: 700;
+}
+
+.card {
+  width: 90%;
+  height: 950px;
+  margin: 70px auto;
+  background: hsl(244, 38%, 16%);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 35%;
+  background-image: url('images/image-header-mobile.jpg');
+  background-size: cover;
+  margin-bottom: 10px;
+}
+
+.foreground {
+  background: hsl(277, 100%, 22%);
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+}
+
+.information {
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+}
+
+h1,
+h3 {
+  color: white;
+  font-size: 1.9rem;
+}
+
+span {
+  color: hsl(277, 64%, 62%);
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.5);
+  font-family: 'Lexend', sans-serif;
+  weight: 400;
+  font-size: 1rem;
+}
+
+p.subheading {
+  margin-top: 20px;
+}
+
+.companies,
+.templates,
+.queries {
+  margin-top: 30px;
+  padding: 0 10px;
+}
+
+.testimoni {
+  padding: 30px 0;
+  width: 100%;
+}
+
+.text {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+@media screen and (min-width: 1000px) {
+  .card {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 50vh;
+    margin: 180px auto;
+    width: 80%;
+  }
+
+  .information {
+    text-align: left;
+    padding: 40px;
+    align-items: space-between;
+  }
+
+  .hero-image {
+    height: 100%;
+  }
+
+  h1,
+  h3 {
+    font-size: 2.3rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .testimoni {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.footer {
+  color: white;
+  text-align: center;
+  padding: 0 10px 20px 10px;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(277, 64%, 61%);
+}
